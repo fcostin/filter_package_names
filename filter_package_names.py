@@ -29,7 +29,7 @@ def main():
 	pattern = sys.argv[1]
 
 	for x in sys.stdin:
-		if not x.startswith(pattern):
+		if x.split()[0] != pattern:
 			continue
 		print package_name(x)
 
